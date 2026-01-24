@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala Code</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/course.css">
+    <link rel="shortcut icon" href="images/SalaCode-Logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/SalaCode-Logo.png" alt="LogoSalaCode">
+            <span>សាលាកូដ</span>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+           <a href="index.html"> 
+                <img src="images/house.png" alt="Home">ទំព័រដើម</a>
+            <a href="course.html">
+                <img src="images/online-course.png" alt="course">ថ្នាក់រៀន</a>
+            <a href="video.html">
+                <img src="images/streaming.png" alt="video">វិដេអូ</a>
+            <a href="test.html">
+                <img src="images/testing.png" alt="Test">ការតេស្ត</a>
+            <a href="about.html">
+                <img src="images/personal-information.png" alt="About">អំពីយើង</a>
+            <a href="contact.html">
+                <img src="images/phone.png" alt="Contact">ទំនាក់ទំនង</a>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="hero-title">
+        ជម្រើស<span>វគ្គសិក្សា</span>របស់យើង
+        </h1> 
+        <p class="hero-sub">
+        ក្រុម SALA CODE របស់យើងសូមស្វាគមន៍បងប្អូនមកកាន់វគ្គសិក្សាដ៏ពេញនិយមជាជាច្រើនពេលបច្ចុប្បន្ន សូមធ្វើការជ្រើសរើសវគ្គសិក្សាដូចខាងក្រោម។
+        </p>
+    </section>
+
+    <!-- SEARCH + CONTENT -->
+    <main class="content">
+        <div class="search-wrap">
+            <div class="search">
+                <span class="search-ic">🔍</span>
+                <input id="searchInput" type="text" placeholder="ស្វែងរកថ្នាក់រៀន..." />
+                <button id="searchBtn" type="button">ស្វែងរក</button>
+            </div>
+        </div>
+
+        <section class="cards">
+
+            <!-- Card 1 -->
+            <article class="card" data-title="C">
+
+                <div class="card-img">
+                    <img src="images/c-programming.png" alt="C Programming Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ C</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card" data-title="C++">
+
+                <div class="card-img">
+                    <img src="images/C++ Programing - Course.png" alt="C++ Programming Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ C++</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី (programming language) ដែលមាន
+                        ឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card" data-title="Python">
+
+                <div class="card-img">
+                    <img src="images/PythonCourse.png" alt="Python Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ Python</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card" data-title="Java">
+
+                <div class="card-img">
+                    <img src="images/JavaCourse.jpg" alt="Java Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ Java</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card" data-title="HTML">
+
+                <div class="card-img">
+                    <img src="images/HTML-Course.jpg" alt="HTML Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ HTML</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="card" data-title="CSS">
+
+                <div class="card-img">
+                    <img src="images/CSS-Course.png" alt="CSS Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ CSS</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="card" data-title="JavaScript">
+
+                <div class="card-img">
+                    <img src="images/JavaScript-Course.png" alt="JavaScript Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ JavaScript</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="card" data-title="GitHub">
+
+                <div class="card-img">
+                    <img src="images/GitHub-Course.jpg" alt="GitHub Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ GitHub</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="card" data-title="Git">
+
+                <div class="card-img">
+                    <img src="images/Git-Course.png" alt="Git Course">
+                    <div class="card-badge">Free</div>
+                </div>
+
+                <div class="card-body">
+                    <h3>ថ្នាក់ Git</h3>
+                    <p>
+                        កម្មវិធី C គឺជាភាសាសរសេរកម្មវិធី(programming language)ដែលមានឥទ្ធិពល និងត្រូវបានគេប្រើយ៉ាងទូលំទូលាយក្នុងការអភិវឌ្ឍន៍កម្មវិធីកុំព្យូទ័រ។
+                    </p>
+                    <a class="btn" href="#">ចាប់ផ្តើមរៀន</a>
+                </div>
+            </article>
+
+        </section>
+        <p id="noResult"> សូមអធ្យាស្រ័យផង course នេះ មិនទាន់មានទេ ខ្ញុំនឹងព្យាយាមបន្ថែមវាពេលក្រោយ... </p>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h3>អំពីយើង</h3>
+                <p>
+                    ជាគេហទំព័រអប់រំ ITE សម្រាប់សិស្ស
+                    និងអ្នកចាប់ផ្តើមសិក្សាព័ត៌មានវិទ្យា
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col center">
+                <h3>បណ្តាញសង្គម</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/telegram.png" alt="Telegram"></a>
+                    <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="images/Rupp_logo.png" alt="RUPP Logo">
+                    <p class="footer-name">RUPP</p>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h3>ទីតាំង</h3>
+                <p>📍 រាជធានីភ្នំពេញ កម្ពុជា</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            Copyright © 2026 សាលាកូដ. All rights reserved.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/course.js"></script>
+</body>
+</html>

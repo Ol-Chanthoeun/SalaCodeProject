@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala Code</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/SalaCode-Logo.png" type="image/x-icon">
 </head>
 <body>
 
     <!-- Header -->
     <header class="navbar">
-        <div class="logo">សាលាកូដ</div>
-        <nav>
-            <a href="#">🏠 ទំព័រដើម</a>
-            <a href="#">📘 ថ្នាក់រៀន</a>
-            <a href="#">💬 វិដេអូ</a>
-            <a href="#">❓ ការតេស្ត</a>
-            <a href="#">ℹ️ អំពីយើង</a>
-            <a href="#">✍️ ទំនាក់ទំនង</a>
+        <div class="logo">
+            <img src="images/SalaCode-Logo.png" alt="LogoSalaCode">
+            <span>សាលាកូដ</span>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"> 
+                <img src="images/house.png" alt="Home">ទំព័រដើម</a>
+            <a href="course.html">
+                <img src="images/online-course.png" alt="course">ថ្នាក់រៀន</a>
+            <a href="video.html">
+                <img src="images/streaming.png" alt="video">វិដេអូ</a>
+            <a href="test.html">
+                <img src="images/testing.png" alt="Test">ការតេស្ត</a>
+            <a href="about.html">
+                <img src="images/personal-information.png" alt="About">អំពីយើង</a>
+            <a href="contact.html">
+                <img src="images/phone.png" alt="Contact">ទំនាក់ទំនង</a>
         </nav>
     </header>
     <!-- End Header -->
@@ -26,16 +40,15 @@
     <!-- Hero section -->
     <section class="hero">
         <div class="hero-left">
-            <img src="images/online-coding-classes-for-kids.webp" alt="Student">
+            <img src="images/LearnOnline.png" alt="Student">
         </div>
 
         <div class="hero-right">
             <h1>
                 សូមស្វាគមន៍មកកាន់
-                <span>សាលាកូដអនឡាញ</span>
+                <span class="colorShift">សាលាកូដអនឡាញ</span>
             </h1>
-            <p>
-                រៀនសរសេរកូដដោយឥតគិតថ្លៃ ជាភាសាខ្មែរ ចាប់ពីមូលដ្ឋាន ងាយយល់ ។
+            <p class="typing" id="typingText">
             </p>
 
             <div class="hero-buttons">
@@ -101,7 +114,7 @@ Blockchain, Cybersecurity។</p>
 
             <!-- Left -->
             <div class="left-box">
-                <img src="images/student2.png" alt="Student">
+                <img src="images/People.jpg" alt="Student">
             </div>
 
             <!-- Divider -->
@@ -284,14 +297,14 @@ variables, functions និង events។
         <div class="social-left">
             <h2>គាំទ្រតាមបណ្តាញសង្គម:</h2>
 
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=61586520855760" target="_blank">
                 <div class="social-card facebook">
                 <h3>Facebook Page</h3>
                 <p>Follow on facebook to get latest update</p>
                 </div>
             </a>
 
-            <a href="">
+            <a href="https://t.me/SalaCode007" target="_blank">
                 <div class="social-card telegram">
                 <h3>Telegram Channel</h3>
                 <p>Follow on telegram to get latest update</p>
@@ -300,7 +313,7 @@ variables, functions និង events។
         </div>
 
         <div class="social-right">
-            <img src="images/Kids-Coding-2.png" alt="Kids Coding">
+            <img src="images/SalaCode-Logo.png" alt="Kids Coding">
         </div>
     </section>
 
@@ -332,14 +345,14 @@ variables, functions និង events។
             <div class="footer-col center">
                 <h3>បណ្តាញសង្គម</h3>
                 <div class="social-icons">
-                    <a href="#">🌐</a>
-                    <a href="#">📘</a>
-                    <a href="#">📱</a>
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/telegram.png" alt="Telegram"></a>
+                    <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
                 </div>
 
                 <div class="footer-logo">
                     <img src="images/Rupp_logo.png" alt="Logo">
-                    <p class="footer-name">សាលារៀន</p>
+                    <p class="footer-name">RUPP</p>
                 </div>
             </div>
 
@@ -355,7 +368,8 @@ variables, functions និង events។
         </div>
     </footer>
 
-
+    <script src="scripts/main.js"></script>
+    <script src="scripts/home.js"></script>
     
     
     
