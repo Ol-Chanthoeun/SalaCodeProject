@@ -187,13 +187,42 @@
   .hero-sub { 
     font-size: 12px; 
   }
-  .cards { grid-template-columns: 1fr; 
+  .cards { 
+    grid-template-columns: 1fr; 
   }
 
   .search {
     width: 100%;
     gap: 6px;
+    position: relative;
+
+  }
+
+  #searchBtn {
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 6px;
     
 
+
+  }
+
+  #searchInput {
+    font-size: 16px;
+  
+
+  }
+
+  .search-ic {
+    font-size: 18px;
+    padding-left: 6px;
+  }
+}
+
+
+@media (max-width: 316px) {
+  .search-ic {
+    display: none;
   }
 }
