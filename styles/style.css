@@ -66,10 +66,11 @@ body {
     text-decoration: underline;
 }
 
-nav a img {
+nav a i {
     width: 20px;
     vertical-align: middle;
     margin-right: 6px;
+    
 
 }
 

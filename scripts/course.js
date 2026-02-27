@@ -1,53 +1,41 @@
-const searchInput = document.getElementById("searchInput");
-const searchBtn = document.getElementById("searchBtn");
-const cards = document.querySelectorAll(".card");
+// ===== Sidebar Toggle Button (NEW) =====
+(function () {
+  const btn = document.getElementById("sidebarToggle");
+  const sidebar = document.querySelector(".sidebar");
 
-function filterCourses() {
-  const keyword = searchInput.value.trim().toLowerCase();
+  if (!btn || !sidebar) return;
 
-  cards.forEach(card => {
-    const title = (card.dataset.title || "").toLowerCase();
-    const h3 = card.querySelector("h3")?.innerText.toLowerCase() || "";
+  function openSidebar() {
+    sidebar.classList.add("is-open");
+    document.body.classList.add("sidebar-open");
+    btn.setAttribute("aria-expanded", "true");
+  }
 
-    // match keyword with data-title OR h3 text
-    if (title.includes(keyword) || h3.includes(keyword)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
-}
+  function closeSidebar() {
+    sidebar.classList.remove("is-open");
+    document.body.classList.remove("sidebar-open");
+    btn.setAttribute("aria-expanded", "false");
+  }
 
-// Filter while typing
-searchInput.addEventListener("input", filterCourses);
-
-// Filter when click button
-searchBtn.addEventListener("click", filterCourses);
-
-// Press Enter to search
-searchInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") filterCourses();
-});
-
-
-// Optional: Show "no results" message
-const noResult = document.getElementById("noResult");
-
-function filterCourses() {
-  const keyword = searchInput.value.trim().toLowerCase();
-  let found = false;
-
-  cards.forEach(card => {
-    const title = (card.dataset.title || "").toLowerCase();
-    const h3 = card.querySelector("h3")?.innerText.toLowerCase() || "";
-
-    if (title.includes(keyword) || h3.includes(keyword)) {
-      card.style.display = "block";
-      found = true;
-    } else {
-      card.style.display = "none";
-    }
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    sidebar.classList.contains("is-open") ? closeSidebar() : openSidebar();
   });
 
-  noResult.style.display = found ? "none" : "block";
-}
+  // click outside closes
+  document.addEventListener("click", (e) => {
+    if (!sidebar.classList.contains("is-open")) return;
+    if (!sidebar.contains(e.target) && e.target !== btn) closeSidebar();
+  });
+
+  // click a link closes
+  sidebar.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (a) closeSidebar();
+  });
+
+  // ESC closes
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeSidebar();
+  });
+})();
