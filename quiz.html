@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sala Code</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/quiz.css" />
+
+    <link
+      rel="shortcut icon"
+      href="images/SalaCode-Logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/SalaCode-Logo.png" alt="LogoSalaCode" />
+        <span>សាលាកូដ</span>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"> <i class="bx bx-home"></i>ទំព័រដើម</a>
+        <a href="course.html"> <i class="bx bx-book-content"></i>ថ្នាក់រៀន</a>
+        <a href="video.html"> <i class="bx bx-play-circle"></i>វិដេអូ</a>
+        <a href="test.html"> <i class="bx bx-check-circle"></i>ការតេស្ត</a>
+        <a href="about.html"> <i class="bx bx-user"></i>អំពីយើង</a>
+        <a href="contact.html"> <i class="bx bx-phone"></i>ទំនាក់ទំនង</a>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!--head quiz-->
+    <div class="app">
+      <h1>Simple Quiz in C programming</h1>
+      <div class="quiz">
+        <h2 id="question">
+          សំណូរទី ១ តើការប្រព្រឹត្តនៃការបង្ហាញលទ្ធផលនៅក្នុង C គឺ?
+        </h2>
+        <div id="answer-buttons">
+          <button class="btn">1. printf("Hello World")</button>
+          <button class="btn">2. echo "Hello World"</button>
+          <button class="btn">3. cout("Hello World")</button>
+          <button class="btn">4. display("Hello World")</button>
+        </div>
+        <button id="next-btn">Next Question</button>
+      </div>
+    </div>
+    <script src="Quiz.js"></script>
+    <!--end head quiz-->
+    <!--end head quiz-->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h3>អំពីយើង</h3>
+          <p>
+            ជាគេហទំព័រអប់រំ ITE សម្រាប់សិស្ស និងអ្នកចាប់ផ្តើមសិក្សាព័ត៌មានវិទ្យា
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col center">
+          <h3>បណ្តាញសង្គម</h3>
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="images/telegram.png" alt="Telegram" /></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok" /></a>
+          </div>
+
+          <div class="footer-logo">
+            <img src="images/Rupp_logo.png" alt="RUPP Logo" />
+            <p class="footer-name">RUPP</p>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h3>ទីតាំង</h3>
+          <p>📍 រាជធានីភ្នំពេញ កម្ពុជា</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Copyright © 2026 សាលាកូដ. All rights reserved.
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
