@@ -1,98 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sala Code</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="shortcut icon" href="images/SalaCode-Logo.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link
+      rel="shortcut icon"
+      href="images/SalaCode-Logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="navbar">
-        <div class="logo">
-            <img src="images/SalaCode-Logo.png" alt="LogoSalaCode">
-            <span>សាលាកូដ</span>
-        </div>
+      <div class="logo">
+        <img src="images/SalaCode-Logo.png" alt="LogoSalaCode" />
+        <span>សាលាកូដ</span>
+      </div>
 
-        <!-- Hamburger Button -->
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-            ☰
-        </button>
+      <!-- Hamburger Button -->
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
 
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html"> 
-                <i class='bx bx-home'></i>ទំព័រដើម</a>
-            <a href="course.html">
-                <i class='bx bx-book-content'></i>ថ្នាក់រៀន</a>
-            <a href="video.html">
-                <i class='bx bx-play-circle'></i>វិដេអូ</a>
-            <a href="test.html">
-                <i class='bx bx-check-circle'></i>ការតេស្ត</a>
-            <a href="about.html">
-                <i class='bx bx-user'></i>អំពីយើង</a>
-            <a href="contact.html">
-                <i class='bx bx-phone'></i>ទំនាក់ទំនង</a>
-        </nav>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"> <i class="bx bx-home"></i>ទំព័រដើម</a>
+        <a href="course.html"> <i class="bx bx-book-content"></i>ថ្នាក់រៀន</a>
+        <a href="video.html"> <i class="bx bx-play-circle"></i>វិដេអូ</a>
+        <a href="test.html"> <i class="bx bx-check-circle"></i>ការតេស្ត</a>
+        <a href="about.html"> <i class="bx bx-user"></i>អំពីយើង</a>
+        <a href="contact.html"> <i class="bx bx-phone"></i>ទំនាក់ទំនង</a>
+      </nav>
     </header>
     <!-- End Header -->
 
+    <!-- Contact Section -->
+    <section class="contact-page">
+      <div class="contact-container">
+        <div class="top-section">
+          <h1>ទំនាក់ទំនង<span class="highlight-text">មកកាន់យើងខ្ញុំ</span></h1>
+          <p class="subtitle">
+            បើមិត្តអ្នកសិក្សាមានសំណួរ ឬចម្ងល់អីអាចសាកសួរមកកាន់យើងបាន
+            តាមរយៈការសរសេរនៅទីនេះ !
+          </p>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>អ៊ីម៉ែល</label>
+              <input type="email" placeholder="សរសេរ email ទីនេះ" required />
+            </div>
+            <div class="form-group">
+              <label>ឈ្មោះ</label>
+              <input type="text" placeholder="សរសេរឈ្មោះរបស់អ្នក" required />
+            </div>
+          </div>
 
-    <!-- Main Content (main.css) -->
-    <main class="main-content">
-        <section class="page">
-            <h1>ទំព័រថ្មី</h1>
-            <p>Content នេះគ្រប់គ្រងដោយ main.css</p>
-        </section>
-    </main>
+          <div class="form-group">
+            <label>សារ</label>
+            <textarea
+              rows="5"
+              placeholder="សរសេរសាររបស់អ្នកនៅទីនេះ..."
+              required
+            ></textarea>
+          </div>
 
+          <button type="submit" class="submit-btn">សូមចុចបញ្ជូន</button>
+        </form>
+      </div>
 
+      <div class="info-section-wrapper">
+        <div class="blue-background"></div>
+        <div class="info-card-container">
+          <div class="info-card">
+            <div class="info-item">
+              <div class="icon-circle">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <h3>About</h3>
+              <p>និស្សិតឆ្នាំទី ២ ឆមាសទី ១<br />ជំនាញ ITE នៅ RUPP</p>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-circle">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <h3>Phone</h3>
+              <p>+855 962796742<br />+855 014577474</p>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-circle">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h3>Location</h3>
+              <p>សង្កាត់ទឹកថ្លា ខណ្ឌសែនសុខ<br />រាជធានី ភ្នំពេញ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Contact Section -->
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-top">
-
-            <!-- Column 1 -->
-            <div class="footer-col">
-                <h3>អំពីយើង</h3>
-                <p>
-                    ជាគេហទំព័រអប់រំ ITE សម្រាប់សិស្ស
-                    និងអ្នកចាប់ផ្តើមសិក្សាព័ត៌មានវិទ្យា
-                </p>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="footer-col center">
-                <h3>បណ្តាញសង្គម</h3>
-                <div class="social-icons">
-                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/telegram.png" alt="Telegram"></a>
-                    <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
-                </div>
-
-                <div class="footer-logo">
-                    <img src="images/Rupp_logo.png" alt="RUPP Logo">
-                    <p class="footer-name">RUPP</p>
-                </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="footer-col">
-                <h3>ទីតាំង</h3>
-                <p>📍 រាជធានីភ្នំពេញ កម្ពុជា</p>
-            </div>
-
+      <div class="footer-top">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h3>អំពីយើង</h3>
+          <p>
+            ជាគេហទំព័រអប់រំ ITE សម្រាប់សិស្ស និងអ្នកចាប់ផ្តើមសិក្សាព័ត៌មានវិទ្យា
+          </p>
         </div>
 
-        <div class="footer-bottom">
-            Copyright © 2026 សាលាកូដ. All rights reserved.
+        <!-- Column 2 -->
+        <div class="footer-col center">
+          <h3>បណ្តាញសង្គម</h3>
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="images/telegram.png" alt="Telegram" /></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok" /></a>
+          </div>
+
+          <div class="footer-logo">
+            <img src="images/Rupp_logo.png" alt="RUPP Logo" />
+            <p class="footer-name">RUPP</p>
+          </div>
         </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h3>ទីតាំង</h3>
+          <p>📍 រាជធានីភ្នំពេញ កម្ពុជា</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Copyright © 2026 សាលាកូដ. All rights reserved.
+      </div>
     </footer>
     <!-- End Footer -->
 
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
