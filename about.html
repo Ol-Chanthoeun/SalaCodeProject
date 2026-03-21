@@ -1,96 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sala Code</title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/about.css">
-        <link rel="shortcut icon" href="images/SalaCode-Logo.png"
-            type="image/x-icon">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-            rel='stylesheet'>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
 
-        <!-- Header -->
-        <header class="navbar">
-            <div class="logo">
-                <img src="images/SalaCode-Logo.png" alt="LogoSalaCode">
-                <span>សាលាកូដ</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala Code</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="shortcut icon" href="images/SalaCode-Logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/SalaCode-Logo.png" alt="LogoSalaCode">
+            <span>សាលាកូដ</span>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">
+                <i class='bx bx-home'></i>ទំព័រដើម</a>
+            <a href="course.html">
+                <i class='bx bx-book-content'></i>ថ្នាក់រៀន</a>
+            <a href="video.html">
+                <i class='bx bx-play-circle'></i>វិដេអូ</a>
+            <a href="test.html">
+                <i class='bx bx-check-circle'></i>ការតេស្ត</a>
+            <a href="about.html">
+                <i class='bx bx-user'></i>អំពីយើង</a>
+            <a href="contact.html">
+                <i class='bx bx-phone'></i>ទំនាក់ទំនង</a>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- About Section -->
+    <section class="about">
+        <h1 class="title">
+            អំពី<span>ធីម</span>ការងារ
+        </h1>
+        <p class="My-team">ក្រុម SALA CODE គឺជាក្រុមសិស្សនិស្សិតដែលបង្កើតគេហទំព័រ (website) និងប្រព័ន្ធផ្សេងៗ
+            ដើម្បីបម្រើការសិក្សា និងការអនុវត្តជាក់ស្តែង។</p>
+
+        <div class="container-grid">
+            <div class="picture">
+                <img class="workteam-picture" src="images/discussion.png">
             </div>
 
-            <!-- Hamburger Button -->
-            <button class="menu-btn" id="menuBtn" aria-label="Open menu"
-                aria-expanded="false">
-                ☰
-            </button>
+            <div class="desrciption">
+                <div>
+                    <h1 class="our-team">Our Team</h1>
+                </div>
 
-            <nav class="nav-links" id="navLinks">
-                <a href="index.html">
-                    <i class='bx bx-home'></i>ទំព័រដើម</a>
-                <a href="course.html">
-                    <i class='bx bx-book-content'></i>ថ្នាក់រៀន</a>
-                <a href="video.html">
-                    <i class='bx bx-play-circle'></i>វិដេអូ</a>
-                <a href="test.html">
-                    <i class='bx bx-check-circle'></i>ការតេស្ត</a>
-                <a href="about.html">
-                    <i class='bx bx-user'></i>អំពីយើង</a>
-                <a href="contact.html">
-                    <i class='bx bx-phone'></i>ទំនាក់ទំនង</a>
-            </nav>
-        </header>
-        <!-- End Header -->
-
-        
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-top">
-
-                <!-- Column 1 -->
-                <div class="footer-col">
-                    <h3>អំពីយើង</h3>
-                    <p>
-                        ជាគេហទំព័រអប់រំ ITE សម្រាប់សិស្ស
-                        និងអ្នកចាប់ផ្តើមសិក្សាព័ត៌មានវិទ្យា
+                <div>
+                    <p class="team">
+                        A team is a group of people who work together, share ideas, and support each other to achieve a
+                        common goal. Each member contributes their skills and knowledge to help the team succeed.
                     </p>
                 </div>
 
-                <!-- Column 2 -->
-                <div class="footer-col center">
-                    <h3>បណ្តាញសង្គម</h3>
-                    <div class="social-icons">
-                        <a href="#"><img src="images/facebook.png"
-                                alt="Facebook"></a>
-                        <a href="#"><img src="images/telegram.png"
-                                alt="Telegram"></a>
-                        <a href="#"><img src="images/tiktok.png"
-                                alt="TikTok"></a>
-                    </div>
+                <div class="black-line"></div>
 
-                    <div class="footer-logo">
-                        <img src="images/Rupp_logo.png" alt="RUPP Logo">
-                        <p class="footer-name">RUPP</p>
-                    </div>
+                <div class="text">
+                    <p>គុណលក្ខណៈសំខាន់ៗរបស់ក្រុមយើង</p>
+                    <ul>
+                        <li><span class="icon">🔄</span>ការសហការ (Collaboration): ធ្វើការជាមួយគ្នាដើម្បីសម្រេចគោលដៅ</li>
+                        <li><span class="icon">🎯</span>គោលដៅរួម (Common Goals): មានគោលដៅដូចគ្នា</li>
+                        <li><span class="icon">📋</span>ទំនួលខុសត្រូវ (Responsibility): ទទួលខុសត្រូវលើការងាររបស់ខ្លួន
+                        </li>
+                        <li><span class="icon">🤝</span>ការចែករំលែកចំណេះដឹង (Knowledge Sharing):
+                            ជួយគ្នារៀននិងអភិវឌ្ឍន៍ជំនាញ</li>
+                    </ul>
+
                 </div>
+            </div>
+        </div>
+    </section>
+    <!--End About Section-->
 
-                <!-- Column 3 -->
-                <div class="footer-col">
-                    <h3>ទីតាំង</h3>
-                    <p>📍 រាជធានីភ្នំពេញ កម្ពុជា</p>
+    <!--Introduce Section-->
+    <section class="introduce-our-team">
+        <h1 class="team-member">
+            សមាជិកក្រុមការងារ
+        </h1>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/Thoeun(1).png">
+                <h3 class="name">អុល ចាន់ធឿន</h3>
+                <p>Frontend Developer</p>
+                <p>UX/UI Designer</p>
+               
+                  <div class="icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/Facebook about.png" alt="My Facebook">
+                    </a>
+
+                     <a href="https://www.telegram.com/" target="_blank">
+                        <img class="telegram" src="images/telegram about.png" alt="My Telegram">
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube about.jpeg" alt="My Youtube">
+                    </a>
+
+                     <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="images/tiktok about02.png" alt="My Tiktok">
+                    </a>
                 </div>
-
+                
+                <button class="Buttom">Read More</button>
             </div>
 
-            <div class="footer-bottom">
-                Copyright © 2026 សាលាកូដ. All rights reserved.
-            </div>
-        </footer>
-        <!-- End Footer -->
+            <div class="card">
+                <img src="images/Rith.png">
+                <h3 class="name">អ៊ុំ បញ្ញារិទ្ធិ</h3>
+                <p>Frontend Developer</p>
+                <div class="icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/Facebook about.png" alt="My Facebook">
+                    </a>
 
-        <script src="scripts/main.js"></script>
-    </body>
+                     <a href="https://www.telegram.com/" target="_blank">
+                        <img class="telegram" src="images/telegram about.png" alt="My Telegram">
+                    </a>
+
+                     <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube about.jpeg" alt="My Youtube">
+                    </a>
+
+                     <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="images/tiktok about02.png" alt="My Tiktok">
+                    </a>
+                </div>
+                <button class="Buttom">Read More</button>
+            </div>
+
+            <div class="card">
+                <img src="images/Seyla (1).png">
+                <h3 class="name">ផៃ សីលា</h3>
+                <p>Frontend Developer</p>
+                <div class="icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/Facebook about.png" alt="My Facebook">
+                    </a>
+
+                     <a href="https://www.telegram.com/" target="_blank">
+                        <img class="telegram" src="images/telegram about.png" alt="My Telegram">
+                    </a>
+
+                     <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube about.jpeg" alt="My Youtube">
+                    </a>
+
+                     <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="images/tiktok about02.png" alt="My Tiktok">
+                    </a>
+                </div>
+                <button class="Buttom">Read More</button>
+            </div>
+
+            <div class="card">
+                <img src="images/Ranut.png">
+                <h3 class="name">ផៃ រ៉ានុត</h3>
+                <p>Frontend Developer</p>
+                <div class="icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/Facebook about.png" alt="My Facebook">
+                    </a>
+
+                     <a href="https://www.telegram.com/" target="_blank">
+                        <img class="telegram" src="images/telegram about.png" alt="My Telegram">
+                    </a>
+
+                     <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube about.jpeg" alt="My Youtube">
+                    </a>
+
+                     <a href="https://www.tiktok.com/" target="_blank">
+                        <img src="images/tiktok about02.png" alt="My Tiktok">
+                    </a>
+                </div>
+                <button class="Buttom">Read More</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Introduce Section-->
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h3>អំពីយើង</h3>
+                <p>
+                    ជាគេហទំព័រអប់រំ ITE សម្រាប់សិស្ស
+                    និងអ្នកចាប់ផ្តើមសិក្សាព័ត៌មានវិទ្យា
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col center">
+                <h3>បណ្តាញសង្គម</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/telegram.png" alt="Telegram"></a>
+                    <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="images/Rupp_logo.png" alt="RUPP Logo">
+                    <p class="footer-name">RUPP</p>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h3>ទីតាំង</h3>
+                <p>📍 រាជធានីភ្នំពេញ កម្ពុជា</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            Copyright © 2026 សាលាកូដ. All rights reserved.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/main.js"></script>
+</body>
+
 </html>
