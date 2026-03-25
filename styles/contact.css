@@ -175,3 +175,29 @@ body {
   line-height: 1.6;
   color: #333;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section h1 {
+    font-size: 28px;
+  }
+
+  .top-section .subtitle {
+    font-size: 16px;
+
+  }
+
+  .info-item h3 {
+    font-size: 16px;
+  }
+
+  .info-item p {
+    font-size: 13px;
+  }
+
+  
+
+
+
+  
+}

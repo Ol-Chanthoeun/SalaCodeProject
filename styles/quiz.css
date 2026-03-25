@@ -1,5 +1,26 @@
 /* ====== HERO SECTION ====== */
 /* Styles the top introductory part of the page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
 .hero {
   display: block;
   padding: 100px 18px 40px;
@@ -60,11 +81,12 @@ body {
 }
 
 .app h1 {
-  font-size: 25px;
-  color: aqua;
-  font-weight: 600;
-  border-bottom: 3px solid #fffcfc; /* Separator line below the title */
-  padding-bottom: 30px;
+  font-size: 28px;
+  color: #040404;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 10px; 
 }
 
 /* ====== QUIZ COMPONENTS ====== */
