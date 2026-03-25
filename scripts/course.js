@@ -1,41 +1,36 @@
-// ===== Sidebar Toggle Button (NEW) =====
-(function () {
-  const btn = document.getElementById("sidebarToggle");
-  const sidebar = document.querySelector(".sidebar");
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
+const cards = document.querySelectorAll(".card");
+const noResult = document.getElementById("noResult");
 
-  if (!btn || !sidebar) return;
+function filterCourses() {
+  const keyword = searchInput.value.trim().toLowerCase();
+  let found = false;
 
-  function openSidebar() {
-    sidebar.classList.add("is-open");
-    document.body.classList.add("sidebar-open");
-    btn.setAttribute("aria-expanded", "true");
+  cards.forEach(card => {
+    const title = (card.dataset.title || "").toLowerCase();
+    const h3 = card.querySelector("h3")?.innerText.toLowerCase() || "";
+
+    if (title.includes(keyword) || h3.includes(keyword)) {
+      card.style.display = "";      
+      found = true;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  if (noResult) {
+    noResult.style.display = found ? "none" : "block";
   }
+}
 
-  function closeSidebar() {
-    sidebar.classList.remove("is-open");
-    document.body.classList.remove("sidebar-open");
-    btn.setAttribute("aria-expanded", "false");
-  }
+// Filter while typing
+searchInput.addEventListener("input", filterCourses);
 
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    sidebar.classList.contains("is-open") ? closeSidebar() : openSidebar();
-  });
+// Filter when click button
+searchBtn.addEventListener("click", filterCourses);
 
-  // click outside closes
-  document.addEventListener("click", (e) => {
-    if (!sidebar.classList.contains("is-open")) return;
-    if (!sidebar.contains(e.target) && e.target !== btn) closeSidebar();
-  });
-
-  // click a link closes
-  sidebar.addEventListener("click", (e) => {
-    const a = e.target.closest("a");
-    if (a) closeSidebar();
-  });
-
-  // ESC closes
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeSidebar();
-  });
-})();
+// Press Enter to search
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") filterCourses();
+});
